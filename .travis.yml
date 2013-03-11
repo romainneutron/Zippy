@@ -1,15 +1,5 @@
 language: php
 
-before_script:
-  - sudo easy_install sphinx
-  - composer install --dev --prefer-source
-
-php:
-  - 5.3.3
-  - 5.3
-  - 5.4
-  - 5.5
-
 script:
-  - phpunit -v --coverage-text
-  - sh -c "cd docs && make clean && make html"
+  - which tar
+  - tar --version
